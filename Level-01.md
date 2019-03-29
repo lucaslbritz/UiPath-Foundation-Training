@@ -49,6 +49,9 @@
     - [Log Message Types](#log-message-types)
     - [Log Fields](#log-fields)
     - [Debugging and Exception Handling - RECAP](#debugging-and-exception-handling-recap)
+    <br><br>
+- [**Project Organization**](#project-organization)
+    - [Project Organization - RECAP](#project-organization-recap)
 
 ---
 
@@ -1144,5 +1147,55 @@ In this module we dived into 2 of the most important aspects of software develop
 
 - [Logging Levels](https://studio.uipath.com/v2018.3/docs/logging-levels)
 - [How to use Try Catch Activity?](https://activities.uipath.com/docs/try-catch)
+
+---
+
+
+# Project Organization <a name="project-organization"></a>
+
+## Project Organization - RECAP <a name="project-organization-recap"></a>
+
+### Overview
+
+**This chapter taught you that a project needs to be reliable, efficient, maintainable and extensible.**
+You learnt how to organize a process from start to finish,as well as how to use the **Invoke Workflow** activity.
+
+
+### Takeaways
+
+- When developing automation projects, it’s best to follow these best practices:
+    - **Reliability**: Solid and robust workflows that can handle errors and recover gracefully.
+    - **Efficiency**: Maintaining smooth execution while cutting down development time through a variety of methods.
+    - **Maintainability**: In an environment where collaboration and handovers are the way things work, it’s important that your project is easy to update.
+    - **Extensibility**: The project needs to be as prepared as possible for the addition of new components.
+- You can select any sequence or flowchart, right click and choose **Extract as Workflow**, thus replacing the selection with an **Invoke Workflow** activity, essentially turning it into programming function, with the parameters being arguments for the workflow.
+
+
+### Best practices
+
+- Make sure you take some time to pick the appropriate layout for each workflow:
+    - Main: flowchart or state machine.
+    - Business logic: flowchart.
+    - UI interactions: sequence.
+    - Avoid nested IFs by using flowcharts.
+- It’s good to break your process into smaller workflows:
+    - Develop and test pieces independently.
+    - Reuse workflow.
+    - Collaborate more efficiently by working on separate files.
+- Always handle exceptions:
+    - Place exception prone workflows into Try Catch blocks.
+    - Same goes for externally invoked workflows.
+    - Setup recover sequences.
+- Make sure your workflows are readable:
+    - Choose descriptive names for all components.
+    - Use explanatory notes and comments.
+    - Log real time execution progress.
+    - Place environment settings in a config file.
+- Always keep things clean by closing the applications when they are no longer needed.
+
+
+### Useful links
+
+- [Reusing Automation](https://www.uipath.com/developers/video-tutorials/email-automation)
 
 ---
