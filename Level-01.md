@@ -113,7 +113,7 @@ The data stored within a variable is called a value, and it can be of multiple t
 
 ## Creating Variables <a name="creating-variables"></a>
 
-Variables should be upper **CamelCase**, such as `firstName`, `lastName`.
+Variables should be upper **CamelCase**, such as `FirstName`, `LastName`.
 
 
 ### From the context menu or with a keyboard shortcut (Ctrl+K):
